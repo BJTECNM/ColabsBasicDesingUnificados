@@ -1,6 +1,5 @@
 package com.laraknife.basicdesigncompleted
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -77,7 +76,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@SuppressLint("UnrememberedMutableState")
 @Composable
 private fun Home() {
     var option by rememberSaveable { mutableStateOf(0) }
